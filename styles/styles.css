@@ -1,23 +1,69 @@
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+}
+p {
+  
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+header{
+    text-align: center;
+    background: white;
+    margin-top: 9%;
+}
+header h1{
+    background-color: white;
+    width: 313px;
+    position: fixed;
+    top: 128px;
+    right: 802px;
+    font: normal normal normal 65px/70px Cardo;
+    letter-spacing: -1.29px;
+    color: #1B1B1B;
+    opacity: 1;
+}
+header p{
+    position: fixed;
+    right: 893px;
+    top: 113px;
+    font: normal normal medium 14px/111px Montserrat;
+    letter-spacing: 0.35px;
+    color: #98A684;
+    text-transform: uppercase;
+    opacity: 1;
+}
 .container {
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    border-top: 2px solid #98A684;
+    border-bottom: 2px solid #98A684;
     display: flex;
 }
 
 .column {
     flex: 1;
-    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
  li{
-    top: 277px;
-    left: 393px;
-    width: 310px;
-    height: 101px;
     text-align: left;
     font: normal normal normal 20px/35px Source Sans Pro;
     letter-spacing: 0px;
-    color: #1B1B1B;
+    color: black;
     opacity: 1;
 
 }
-ul li {
-    list: red; /* Cambia el color de la viñeta a rojo */
-}
+ul li::marker {
+    color: #98A684;
+  }
+
+
+
