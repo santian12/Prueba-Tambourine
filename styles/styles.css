@@ -1,3 +1,6 @@
+body{
+  margin: 0;
+}
 h1 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -42,7 +45,9 @@ header p{
 .first_sec{
   margin-bottom: 150px;
 }
-.container {
+.container__header {
+    margin-left: 150px;
+    margin-right: 150px;
     justify-content: center;
     border-top: 2px solid #98A684;
     border-bottom: 2px solid #98A684;
@@ -76,15 +81,12 @@ before, &::after {
 
   
   .container {
-    max-width: 800px;
-    margin: 0 auto;
     padding: 50px;
   }
   
  
   button span {
     position: relative;
-    display: inline-block;
     transform: translateX(0);
     transition: transform 0.3s ease;
   }
@@ -109,6 +111,7 @@ before, &::after {
     display: flex;
     flex: 2;
     text-align: center;
+    height: 21px;
   }
   
   img {
@@ -133,10 +136,9 @@ before, &::after {
   }
   /* Estilos generales para el slider */
   .container {
-    z-index: 2;
-    max-width: 1330px;
+    z-index: 1;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 50px;
     overflow: hidden; /* Oculta el contenido que desborda el contenedor */
   }
   
@@ -150,15 +152,18 @@ before, &::after {
     flex: 0 0 100%; /* Asegura que cada diapositiva ocupe todo el ancho del contenedor */
   }
   
-  
-  /* Otros estilos de las diapositivas y navegación según sea necesario */
-  
-  /* ... */
+.slider-nav{
+  position: absolute;
+  bottom: 123px;
+  left: 581px;
+}
   
   
   .slider-nav span {
-    display: block;
-    width: 100%;
+    font-size: 66px;
+    display: flex;
+    bottom: 26px;
+    left: 11px;
   }
   
   @keyframes fadeImg {
@@ -173,29 +178,28 @@ before, &::after {
 
 
   .slide{
-    display: flex;
+    z-index: 1;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    align-items: center;
   }
   
   .card{
-    width: 1196px;
-    height: 50vmin;
+    height: 57vmin;
+    width: 140vmin;
     display: flex;
     box-shadow: 0 30px 40px -15px rgba(0,0,0,0.35);
     background-color: white;
   }
   
   .card__img{
+    padding-top: 44vh;
     background-position: center;
     width: 50%;
-    height: 100%;
+    height: 23%;
     background-size: cover;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
   }
   
   #img01{
@@ -203,10 +207,12 @@ before, &::after {
   }
   
   #img02{
+    padding-top: 44vh;
     background-image: url("https://images.unsplash.com/photo-1495041405835-b4702187b514?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
   }
   
   #img03{
+    padding-top: 44vh;
     background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?dpr=1&auto=compress,format&fit=crop&w=2734&h=&q=80&cs=tinysrgb&crop=");
   }
   
@@ -254,7 +260,6 @@ before, &::after {
   }
   
   .card__content-link{
-    color: #BA3428;
     font-size: 1.8vmin;
     display: block;
     cursor: pointer;
@@ -271,9 +276,9 @@ before, &::after {
   }
   .section__slider{
     background-image: url('https://i.postimg.cc/zXxQFGNX/wisconsin-dells-1809872-1280-1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
   .section__slider::before {
     position: absolute;
@@ -303,16 +308,50 @@ before, &::after {
     font-size: 20px;
   }
   .next {
-    z-index: 5;
     color: #98A684;
+    cursor: pointer;
+    border-color: transparent;
+    width: 100px;
+    height: 45px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    margin-right: 45px;
+    z-index: 5;
+    background-color: #00000000;
     display: block;
 
   }
+  .number__img{
+    text-align: left;
+    font: normal normal normal 200px/114px Cardo;
+    letter-spacing: -4.29px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+  }
+  .n__1{
+   position: absolute;
+   left: 1401px;
+  }
+  .n__2{
+  padding-left: 53vh;
+  top: 428px;
+  left: 1398px;
+  }
+  .n__3{
+    padding-left: 53vh;
+    top: 429px;
+    left: 1398px;
+    flex-direction: row;
+  }
   .previous {
+    cursor: pointer;
+    border-color: transparent;
+    width: 100px;
+    height: 45px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    margin-right: 45px;
     z-index: 5;
-    color: #BA3428;
+    background-color: #00000000;
     display: block;
-
   }
   #prev, #next{
     position: relative;
