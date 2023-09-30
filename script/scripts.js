@@ -1,50 +1,51 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const items = document.querySelectorAll('img');
-  const itemCount = items.length;
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const itemCount = slides.length;
   const nextItem = document.querySelector('.next');
   const previousItem = document.querySelector('.previous');
   let count = 0;
-  
-  function showNextItem() {
-    items[count].classList.remove('active');
-  
-    if(count < itemCount - 1) {
+
+  function showNextSlide() {
+    if (count < itemCount - 1) {
       count++;
     } else {
       count = 0;
     }
-  
-    items[count].classList.add('active');
-    console.log(count);
+
+    updateSlider();
   }
-  
-  function showPreviousItem() {
-    items[count].classList.remove('active');
-  
-    if(count > 0) {
+
+  function showPreviousSlide() {
+    if (count > 0) {
       count--;
     } else {
       count = itemCount - 1;
     }
-  
-    items[count].classList.add('active');
-    console.log(count);
+
+    updateSlider();
   }
-  
+
+  function updateSlider() {
+    const slideWidth = slides[0].clientWidth; // Ancho de cada diapositiva
+    slider.style.transform = `translateX(-${count * slideWidth}px)`;
+  }
+
   function keyPress(e) {
     e = e || window.event;
-    
+
     if (e.keyCode == '37') {
-      showPreviousItem();
+      showPreviousSlide();
     } else if (e.keyCode == '39') {
-      showNextItem();
+      showNextSlide();
     }
   }
-  
-  nextItem.addEventListener('click', showNextItem);
-  previousItem.addEventListener('click', showPreviousItem);
+
+  nextItem.addEventListener('click', showNextSlide);
+  previousItem.addEventListener('click', showPreviousSlide);
   document.addEventListener('keydown', keyPress);
 });
+
 
 
 
