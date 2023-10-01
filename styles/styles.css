@@ -347,14 +347,13 @@ position: absolute;
 left: 1401px;
   }
   .n__2{
-  
-padding-left: 53vh;
-  
-top: 428px;
-  
-left: 1398px;
+  display: none;
+  padding-left: 53vh;
+  top: 428px;
+  left: 1398px;
   }
   .n__3{
+    display: none;
     padding-left: 53vh;
     top: 429px;
     left: 1398px;
@@ -457,8 +456,12 @@ li {
   opacity: 1;
 }
   .card {
+    margin-bottom: 50px;
+    margin-top: 50px;
     display: table;
 }
+
+.card {}
 .card__content {
   padding: 10% 5%;
   box-sizing: border-box;
@@ -481,6 +484,7 @@ li {
   overflow: hidden;
 }
 .n__1 {
+  display: none;
   padding-left: 53vh;
   right: 9px;
   position: unset;
@@ -495,7 +499,7 @@ li {
   height: 92px;
   position: relative;
   padding-right: 112px;
-  bottom: 709px;
+  bottom: 684px;
   right: 118px;
 }
 .card__content-theme {
