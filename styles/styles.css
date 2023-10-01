@@ -348,8 +348,6 @@ left: 1401px;
   }
   .n__2{
   
-display: none;
-  
 padding-left: 53vh;
   
 top: 428px;
@@ -357,8 +355,6 @@ top: 428px;
 left: 1398px;
   }
   .n__3{
-    
-display: none;
     
 padding-left: 53vh;
     
@@ -504,6 +500,12 @@ li {
   overflow: hidden;
 }
 .n__1 {
+  display: none;
+  padding-left: 53vh;
+  right: 9px;
+  position: unset;
+}
+.n__2,.n__3{
   display: none;
   padding-left: 53vh;
   right: 9px;
