@@ -33,9 +33,10 @@ header h1{
     opacity: 1;
 }
 header p{
+    font-family: Montserrat;
     position: absolute;
     right: 893px;
-    top: 113px;
+    top: 97px;
     font: normal normal medium 14px/111px Montserrat;
     letter-spacing: 0.35px;
     color: #98A684;
@@ -55,13 +56,15 @@ header p{
 }
 
 .column {
+    padding-left: 85px;
+    text-align: justify;
     flex: 1;
-    padding-top: 60px;
+    padding-top: 85px;
     padding-bottom: 60px;
 }
  li{
     text-align: left;
-    font: normal normal normal 20px/35px Source Sans Pro;
+    font: normal normal normal 20px/35px 'Source Sans 3';
     letter-spacing: 0px;
     color: black;
     opacity: 1;
@@ -225,17 +228,19 @@ before, &::after {
   }
   
   .card__content-theme{
+    font-family: 'Montserrat';
     text-align: left;
     font: normal normal medium 14px/111px Montserrat;
     letter-spacing: 0.35px;
     color: #98A684;
     text-transform: uppercase;
     opacity: 1;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.7vmin;
   }
   
   .card__content-header{
+    padding-left: 6px;
     font: normal normal normal 60px/65px Cardo;
     font-weight: 900;
     font-size: 7vmin;
@@ -259,6 +264,7 @@ before, &::after {
     line-height: 1.7;
     font-weight: 300;
     margin-bottom: 2.5vmin;
+    padding-left: 4px;
   }
   
   .card__content-link{
@@ -349,14 +355,10 @@ top: 428px;
 left: 1398px;
   }
   .n__3{
-    
-padding-left: 53vh;
-    
-top: 429px;
-    
-left: 1398px;
-    
-flex-direction: row;
+    padding-left: 53vh;
+    top: 429px;
+    left: 1398px;
+    flex-direction: row;
   }
   .previous {
     cursor: pointer;
@@ -418,24 +420,25 @@ opacity: 1;
     margin-top: 14%;
 }
 header h1 {
+  width: 22vh;
+  font-size: 89px;
   position: absolute;
-  top: 101px;
-  left: 299px;
+  top: 102px;
+  left: 12vh;
   letter-spacing: -1.29px;
   color: #1B1B1B;
   opacity: 1;
 }
   header p {
-    right: 2vh;
+    right: 1vh;
     width: 100%;
-    font-size: 20px;
-    top: 64px;
+    font-size: 30px;
+    top: 50px;
 }
 .container__header {
- 
-margin-right: 88px;
- 
-margin-left: 50px;
+ display: table;
+ margin-left: 79px;
+ width: 84%;
 }
 .slider{
   
@@ -447,15 +450,14 @@ margin-right: 28px;
   flex-direction: row;
 }
 li {
-  font-size: 15px;
-  letter-spacing: 0px;
+  font: normal normal normal 20px/43px 'Source Sans 3';
+  text-align: justify;
+  font-size: 30px;
   color: black;
   opacity: 1;
 }
   .card {
-    width: 100%;
     display: table;
-    background-color: white;
 }
 .card__content {
   padding: 10% 5%;
@@ -487,7 +489,7 @@ li {
   padding-top: 17vh;
 }
 #img01,#img02,#img03{
-  padding-top: 28vh;
+  padding-top: 32vh;
 }
 .previous,.next{
   height: 92px;
@@ -501,15 +503,15 @@ li {
 font-size: 33px;
 }
 .card__content {
-  padding: 10% 5%;
-  box-sizing: border-box;
   width: 65%;
+  /* padding: 10% 5%; */
+  /* box-sizing: border-box; */
 }
 .card__content-paragraph {
+  width: 100%;
   text-align: left;
   font: normal normal normal 16px/30px Source Sans Pro;
-  letter-spacing: 0px;
-  font-size: 3.6vmin;
+  font-size: 36px;
   line-height: 1.7;
   font-weight: 300;
   margin-bottom: 2.5vmin;
